@@ -1,0 +1,80 @@
+Maven (Build tool)
+==================
+-its is built executions and usd to maintating the dependencies
+- repository, where all dependencies are present.
+- when maven project created POM.xml file generated
+   --> all dependencies (jars),plugins, properties, builts etc are present
+   --> seneium jar-- selenium webdriver Elements, methods etc
+   --> apache poi jar-- Excel file
+   --> testNG plugin -- all keywords, annotations etc related testng
+
+- Build--->
+test.java, base.java, utility.java, folders(drivers, test data)
+|---> compile
+test.class, base.class,  utility.class
+|---> package
+.jar file or .war file
+
+-How to run
+1. TestNg suite
+2. maven life cycle (mvn command)
+3. //Integrating testng dependencies in the POM.xml & running the pom.xml file using Jenkins
+   - Eclipse (project)
+   - local repo
+   - git commands
+   - send the project into remote repo (Git hub)
+   - .jar file is executed using Jenkins
+=================================================
+# Meven setup
+- check in cmd
+ mvn -version 
+- if not  then do the set up
+1. download apache maven (bin) (current version)
+2. unzip it
+3. Maven system variable and set path
+  system variable:   
+  MAVEN_HOME  --> D:\Softwares\apache-maven-3.8.4
+  
+  set path:
+  path      --> %MAVEN_HOME%\bin
+            --> D:\Softwares\apache-maven-3.8.4\bin
+4. once set syatem variable and path for maven
+  - check in cmd
+    mvn -version
+    Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537)
+    Maven home: D:\Softwares\apache-maven-3.8.4
+
+===========================================
+# steps to create maven project
+1. File--> New--> Project--> Maven Project
+2. choose Archetype: 
+   Group id:  org.apache.maven.archetype  ---> maven-archetype-quickstart (1.4)
+
+3. create folder structure
+  src/main/java  --> base class (package), utility(package)
+  src/test/java  --> pages(package), tests(package)
+  driver (folder)
+  Screenshot (folder)
+  testData (folder)
+  update POM.xml dependencies from maven repository
+
+4. create testng.xml
+5. run it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
