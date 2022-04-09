@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Dell\eclipse-workspace\TraidingWebApp\kiteTest.xml</span>
+                    <span>C:\Users\Dell\eclipse-workspace\TraidingWebApp\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,11 +105,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.zerodha.kite.tests.KiteLoginPagesValidation" class="method navigator-link" hash-for-method="verifyInvalidCredentialsErrorMessage">verifyInvalidCredentialsErrorMessage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.zerodha.kite.tests.KiteLoginPagesValidation" class="method navigator-link" hash-for-method="verifyInvalidPinErrorMessage">verifyInvalidPinErrorMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +134,23 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zerodha.kite.tests.KiteLoginPagesValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidCredentialsErrorMessage">
+                  </a> <!-- verifyInvalidCredentialsErrorMessage -->
+                  <span class="method-name">verifyInvalidCredentialsErrorMessage</span>
+                  <em>
+(This TC will verify invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -174,36 +186,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zerodha.kite.tests.KiteLoginPagesValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyInvalidCredentialsErrorMessage">
-                  </a> <!-- verifyInvalidCredentialsErrorMessage -->
-                  <span class="method-name">verifyInvalidCredentialsErrorMessage</span>
-                  <em>
-(This TC will verify invalid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyInvalidPinErrorMessage">
-                  </a> <!-- verifyInvalidPinErrorMessage -->
-                  <span class="method-name">verifyInvalidPinErrorMessage</span>
-                  <em>
-(This TC will verify invalid PIN)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\eclipse-workspace\TraidingWebApp\kiteTest.xml</span>
+            <span class="header-content">C:\Users\Dell\eclipse-workspace\TraidingWebApp\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,7 +197,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.zerodha.kite.tests.KiteLoginTest&quot;/&gt;
       &lt;class name=&quot;com.zerodha.kite.tests.KiteLoginPagesValidation&quot;/&gt;
@@ -254,32 +240,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLogoutButton')
 data.setCell(0, 2, 'com.zerodha.kite.tests.KiteLoginTest')
-data.setCell(0, 3, 5633);
+data.setCell(0, 3, 2806);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyProfileName')
+data.setCell(1, 1, 'verifyProfileMenuButton')
 data.setCell(1, 2, 'com.zerodha.kite.tests.KiteLoginTest')
-data.setCell(1, 3, 3306);
+data.setCell(1, 3, 2567);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyProfileMenuButton')
+data.setCell(2, 1, 'verifyProfileName')
 data.setCell(2, 2, 'com.zerodha.kite.tests.KiteLoginTest')
-data.setCell(2, 3, 3100);
+data.setCell(2, 3, 2423);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyInvalidPinErrorMessage')
+data.setCell(3, 1, 'verifyInvalidCredentialsErrorMessage')
 data.setCell(3, 2, 'com.zerodha.kite.tests.KiteLoginPagesValidation')
-data.setCell(3, 3, 1095);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyInvalidCredentialsErrorMessage')
-data.setCell(4, 2, 'com.zerodha.kite.tests.KiteLoginPagesValidation')
-data.setCell(4, 3, 767);
+data.setCell(3, 3, 760);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,75 +289,67 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.zerodha.kite.tests.KiteLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setupApplication(chrome)</span>
+                <span class="method-name">setupApplication(CHROME)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginApp</span>
-                <span class="method-start">10194 ms</span>
+                <span class="method-start">12059 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogoutButton</span>
-                <span class="method-start">12679 ms</span>
+                <span class="method-start">12956 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyLogoutButton status=SUCCESS method=KiteLoginTest.verifyLogoutButton()[pri:0, ...)</span>
-                <span class="method-start">18323 ms</span>
+                <span class="method-start">15771 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginApp</span>
-                <span class="method-start">18327 ms</span>
+                <span class="method-start">15776 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProfileMenuButton</span>
-                <span class="method-start">19888 ms</span>
+                <span class="method-start">16741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyProfileMenuButton status=SUCCESS method=KiteLoginTest.verifyProfileMenuButton...)</span>
-                <span class="method-start">22991 ms</span>
+                <span class="method-start">19311 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">loginApp</span>
-                <span class="method-start">22992 ms</span>
+                <span class="method-start">19314 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProfileName</span>
-                <span class="method-start">24091 ms</span>
+                <span class="method-start">19998 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyProfileName status=SUCCESS method=KiteLoginTest.verifyProfileName()[pri:0, in...)</span>
-                <span class="method-start">27401 ms</span>
+                <span class="method-start">22424 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">27411 ms</span>
+                <span class="method-start">22427 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.zerodha.kite.tests.KiteLoginPagesValidation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setupApplication(chrome)</span>
-                <span class="method-start">27818 ms</span>
+                <span class="method-name">setupApplication(CHROME)</span>
+                <span class="method-start">22681 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidCredentialsErrorMessage</span>
-                <span class="method-start">36591 ms</span>
+                <span class="method-start">26642 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyInvalidCredentialsErrorMessage status=SUCCESS method=KiteLoginPagesValidation...)</span>
-                <span class="method-start">37359 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyInvalidPinErrorMessage</span>
-                <span class="method-start">37365 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyInvalidPinErrorMessage status=SUCCESS method=KiteLoginPagesValidation.verifyI...)</span>
-                <span class="method-start">38461 ms</span>
+                <span class="method-start">27407 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">38462 ms</span>
+                <span class="method-start">27408 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

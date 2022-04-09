@@ -2,11 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.zerodha.kite.tests.KiteLoginTest">
+        <methods>
+          <include name="loginApp"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="verifyProfileMenuButton"/>
+          <include name="verifyLogoutButton"/>
+          <include name="setupApplication"/>
+          <include name="closeApplication"/>
+          <include name="verifyProfileName"/>
+        </methods>
+      </class> <!-- com.zerodha.kite.tests.KiteLoginTest -->
       <class name="com.zerodha.kite.tests.KiteLoginPagesValidation">
         <methods>
-          <include name="verifyInvalidPinErrorMessage"/>
+          <include name="verifyInvalidCredentialsErrorMessage"/>
           <include name="takeScreenShotOnFailure"/>
           <include name="setupApplication"/>
           <include name="closeApplication"/>

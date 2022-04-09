@@ -1,0 +1,124 @@
+shiv2020  Shiv@123
+
+1)What is Jenkins ? 
+2)Why we need Jenkins ? 
+3)Continuous Integration work flow 
+4)How to install Jenkins in Windows ?
+5)Jenkins continuous integration with GitHub 
+6)How to get notification for each build ?
+7)How to create Jenkins Continuous delivery pipeline using build plugin pipeline with Real time example
+
+======================================
+1)What is Jenkins ? 
+- In absense of developer it perform task 
+- Jenkins is an CI tool used to build (compile, test)  code and deploy it to the production
+- Jenkins provides hundreds of plugins to support building, deploying and automating any project
+- It is server-based system that runs in servlet containers such as Apache Tomcat.
+- It support version control tool like SVN, GIT to automate build
+-----------------------------------
+
+2)Why we need Jenkins ? 
+Steps
+i) Devlopers code--Infrequent commit to Source code repository (Git/SVN)
+ii) Create build (compile, test)-- diffivult to integrtion
+iii) Once build done----send to test environment (tester)--- late testing
+iv) Tester will test and notify to devlopers (if any bug)
+v) If no bugs send for release
+
+
+Problem before CI
+- I hope code work fine in testing??-----> not sure and wait for test result which takes a lot of time
+- If any bug in testing then I have to check the entire source code --> again lengthy process
+
+----------------------------------------
+
+3)Continuous Integration work flow 
+
+Steps
+i) Devlopers code--frequent commit to Source code repository (Git/SVN)
+ii) Then code is pulled into Continuous Integration Server where all pre steps are done (Build, Test and Deploy)
+iii) During Build and Test if any issue immediatly notify to the developer (Fetch changes)
+iv) If no issue then directly send to deploy (stage/prod/UAT environment)
+v) after deployment nofity (success/ failure) to dev for result
+------------------------------
+
+Before CI:
+- The entire source code was build and then tested
+- Devlopers have to wait for test results
+- No feedback
+
+After CI:
+- Every commit made in the source code is build and tested
+- Developers know the test result of every commit made in the source code on the run
+- Feedback is present
+
+---------------------------------------------
+4) Download and install Jenkins (Up and run the Jenkin server)
+Jenkins Basic
+
+- Download the LTE jenkins war file
+- Requirement java installed
+- java -version
+- java -jar "file path" / u may run from file location
+- java -jar jenkins.war  // used to run jenkins war file
+- password: 6f2ffcc7785b48ed85102143ca523bad
+- By default port 8080
+- write "localhost:8080" in address bar after jenkins up and running
+- asking the password
+- Select "Install suggested plugins"
+- Configure UN and PWD
+- http://192.168.43.191:8080/  // You can change localhost to your IP address
+- use this command to know your IP address====> ipconfig/all and press Enter
+
+-----------------------------------------------
+5)Jenkins continuous integration with GitHub 
+
+- Create new project in Eclipse
+- Create the repository in GITHUB
+- Now we need to sink our project with repository
+
+- Steps need to be follow
+1. We need GIT BASH
+2. Clone the remote repository into local (using GIT BASH)
+ git clone https://github.com/Sanjay2012/Jenkin-Integration-test.git
+3.Change your directory in Eclipse
+4. Write some code and Save it
+5. Now we want to push our code into repository
+6. Go to project directory
+7. Open "GIT BASH" here
+8. git init
+9. git status
+10. git add
+11. git commit -m "First commit"
+
+git remote add origin  <REMOTE_URL>  ----    # Sets the new remote
+git remote -v   ----# Verifies the new remote URL
+
+git pull --rebase upstream develop
+git push origin develop -f
+
+13. git push -u origin master/main
+
+# Choose following setting for SCM
+In SCM:
+1) select Git
+2) Name: origin
+3) Refspec: +refs/pull/*:refs/remotes/origin/pr/*
+4) Branches to build : leave blank
+
+
+* * * * * command(s)
+^ ^ ^ ^ ^
+| | | | |     allowed values
+| | | | |     -------
+| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+| | | ------- Month (1 - 12)
+| | --------- Day of month (1 - 31)
+| ----------- Hour (0 - 23)
+------------- Minute (0 - 59)
+
+-------------------
+# Email configuration
+SMTP server: smtp.gmail.com
+port: 465
+=======================================================

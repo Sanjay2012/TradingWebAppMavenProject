@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.zerodha.kite.baseClass.BaseClass;
+import com.zerodha.kite.utilities.ConfigFileReader;
 import com.zerodha.kite.utilities.Utility;
 import com.zerodha.kite.webpages.KiteHomePage;
 import com.zerodha.kite.webpages.KiteLoginPage1;
@@ -20,6 +21,12 @@ public class KiteLoginTest extends BaseClass {
 	public KiteHomePage home;
 	public KitePageAfterLogout logout;
 	
+	String validUsername = ConfigFileReader.getInstance().getValidUsername();
+	String validPassword = ConfigFileReader.getInstance().getValidPassword();
+	String validPIN = ConfigFileReader.getInstance().getValidPIN();
+	String validPN = ConfigFileReader.getInstance().getValidProfileName();
+	
+	
 
 	@BeforeMethod
 	public void loginApp() throws EncryptedDocumentException, IOException {
@@ -27,15 +34,19 @@ public class KiteLoginTest extends BaseClass {
 		// calling methods from POM class -- KiteLoginPage1
 		login1 = new KiteLoginPage1(driver);
 
-		login1.setKiteLoginPage1Username(Utility.getTestData(1, 0));
-		login1.setKiteLoginPage1Password(Utility.getTestData(1, 1));
+//		login1.setKiteLoginPage1Username(Utility.getTestData(1, 0));
+//		login1.setKiteLoginPage1Password(Utility.getTestData(1, 1));
+		
+		login1.setKiteLoginPage1Username(validUsername);
+		login1.setKiteLoginPage1Password(validPassword);
 
 		login1.clickKiteLoginPage1LoginButton();
 
 		// cllaing methods from page2
 
 		login2 = new KiteLoginPage2(driver);
-		login2.setKiteLoginPage2Pin(Utility.getTestData(1, 2));
+		//login2.setKiteLoginPage2Pin(Utility.getTestData(1, 2));
+		login2.setKiteLoginPage2Pin(validPIN);
 		login2.clickKiteLoginPage2ContinueButton();
 
 	}
@@ -45,7 +56,8 @@ public class KiteLoginTest extends BaseClass {
 		// calling methods from home page class
 		home = new KiteHomePage(driver);
 		String actResult = home.veryfyKiteHomePageProfileName();
-		String expResult = Utility.getTestData(1, 3);
+		//String expResult = Utility.getTestData(1, 3);
+		String expResult = validPN;
 		Assert.assertEquals(actResult, expResult);
 		home.clickOnProfileMenuButton();
 		home.clickOnLogoutButton();

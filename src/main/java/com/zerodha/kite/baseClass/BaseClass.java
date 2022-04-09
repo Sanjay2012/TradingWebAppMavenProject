@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -16,10 +17,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.zerodha.kite.utilities.ConfigFileReader;
 import com.zerodha.kite.utilities.Utility;
 
 
 public class BaseClass {
+	
+	String baseURL = ConfigFileReader.getInstance().getURL();
+	
 	public WebDriver driver;
 	@Parameters("browser")
 	@BeforeClass
@@ -27,7 +32,7 @@ public class BaseClass {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--disable-notification");
+			options.addArguments("--headless");
 			Reporter.log("=====Chrome Browser Session Started=====", true);
 			driver = new ChromeDriver(options);
 		}
@@ -45,8 +50,9 @@ public class BaseClass {
 			Reporter.log("=====Edge Browser Session Started=====", true);
 			driver=new EdgeDriver();
 		}
+				
 
-		driver.get("https://kite.zerodha.com/");
+		driver.get(baseURL);
 		Reporter.log("=====Application Started=====", true);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
