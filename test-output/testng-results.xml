@@ -20,12 +20,12 @@
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-09T07:15:42 IST" name="Suite" finished-at="2022-04-09T07:16:09 IST" duration-ms="27765">
+  <suite started-at="2022-04-09T18:56:47 IST" name="Suite" finished-at="2022-04-09T18:57:21 IST" duration-ms="34065">
     <groups>
     </groups>
-    <test started-at="2022-04-09T07:15:42 IST" name="Test" finished-at="2022-04-09T07:16:09 IST" duration-ms="27765">
+    <test started-at="2022-04-09T18:56:47 IST" name="Test" finished-at="2022-04-09T18:57:21 IST" duration-ms="34065">
       <class name="com.zerodha.kite.tests.KiteLoginTest">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:15:42 IST" name="setupApplication" finished-at="2022-04-09T07:15:54 IST" duration-ms="12044" status="PASS">
+        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:56:47 IST" name="setupApplication" finished-at="2022-04-09T18:57:06 IST" duration-ms="19152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,64 +42,64 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:15:54 IST" name="loginApp" finished-at="2022-04-09T07:15:55 IST" duration-ms="896" status="PASS">
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:06 IST" name="loginApp" finished-at="2022-04-09T18:57:07 IST" duration-ms="866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="verifyLogoutButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:15:55 IST" name="verifyLogoutButton" description="This TC will verify status of logout Button" finished-at="2022-04-09T07:15:57 IST" duration-ms="2806" status="PASS">
+        <test-method signature="verifyLogoutButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:07 IST" name="verifyLogoutButton" description="This TC will verify status of logout Button" finished-at="2022-04-09T18:57:10 IST" duration-ms="3018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoutButton -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:15:57 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T07:15:57 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:10 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T18:57:10 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogoutButton status=SUCCESS method=KiteLoginTest.verifyLogoutButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogoutButton status=SUCCESS method=KiteLoginTest.verifyLogoutButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:15:57 IST" name="loginApp" finished-at="2022-04-09T07:15:58 IST" duration-ms="965" status="PASS">
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:10 IST" name="loginApp" finished-at="2022-04-09T18:57:11 IST" duration-ms="720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="verifyProfileMenuButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:15:58 IST" name="verifyProfileMenuButton" description="This TC will verify status of Profile Menu Button" finished-at="2022-04-09T07:16:01 IST" duration-ms="2567" status="PASS">
+        <test-method signature="verifyProfileMenuButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:11 IST" name="verifyProfileMenuButton" description="This TC will verify status of Profile Menu Button" finished-at="2022-04-09T18:57:13 IST" duration-ms="2142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProfileMenuButton -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:16:01 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T07:16:01 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:13 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T18:57:13 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProfileMenuButton status=SUCCESS method=KiteLoginTest.verifyProfileMenuButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProfileMenuButton status=SUCCESS method=KiteLoginTest.verifyProfileMenuButton()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:16:01 IST" name="loginApp" finished-at="2022-04-09T07:16:02 IST" duration-ms="684" status="PASS">
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:13 IST" name="loginApp" finished-at="2022-04-09T18:57:14 IST" duration-ms="668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="verifyProfileName()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:16:02 IST" name="verifyProfileName" description="This TC will verify Profile Name on dashboard" finished-at="2022-04-09T07:16:04 IST" duration-ms="2423" status="PASS">
+        <test-method signature="verifyProfileName()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:14 IST" name="verifyProfileName" description="This TC will verify Profile Name on dashboard" finished-at="2022-04-09T18:57:16 IST" duration-ms="2264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProfileName -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:16:04 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T07:16:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:16 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T18:57:16 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProfileName status=SUCCESS method=KiteLoginTest.verifyProfileName()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProfileName status=SUCCESS method=KiteLoginTest.verifyProfileName()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@55cb6996]" started-at="2022-04-09T07:16:04 IST" name="closeApplication" finished-at="2022-04-09T07:16:04 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.zerodha.kite.tests.KiteLoginTest@7139992f]" started-at="2022-04-09T18:57:16 IST" name="closeApplication" finished-at="2022-04-09T18:57:16 IST" duration-ms="223" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
@@ -108,7 +108,7 @@
         </test-method> <!-- closeApplication -->
       </class> <!-- com.zerodha.kite.tests.KiteLoginTest -->
       <class name="com.zerodha.kite.tests.KiteLoginPagesValidation">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@38467116]" started-at="2022-04-09T07:16:04 IST" name="setupApplication" finished-at="2022-04-09T07:16:08 IST" duration-ms="3960" status="PASS">
+        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@5c86a017]" started-at="2022-04-09T18:57:16 IST" name="setupApplication" finished-at="2022-04-09T18:57:20 IST" duration-ms="4105" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,22 +125,22 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="verifyInvalidCredentialsErrorMessage()[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@38467116]" started-at="2022-04-09T07:16:08 IST" name="verifyInvalidCredentialsErrorMessage" description="This TC will verify invalid credentials" finished-at="2022-04-09T07:16:09 IST" duration-ms="760" status="PASS">
+        <test-method signature="verifyInvalidCredentialsErrorMessage()[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@5c86a017]" started-at="2022-04-09T18:57:20 IST" name="verifyInvalidCredentialsErrorMessage" description="This TC will verify invalid credentials" finished-at="2022-04-09T18:57:21 IST" duration-ms="643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidCredentialsErrorMessage -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@38467116]" started-at="2022-04-09T07:16:09 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T07:16:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@5c86a017]" started-at="2022-04-09T18:57:21 IST" name="takeScreenShotOnFailure" finished-at="2022-04-09T18:57:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyInvalidCredentialsErrorMessage status=SUCCESS method=KiteLoginPagesValidation.verifyInvalidCredentialsErrorMessage()[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@38467116] output={null}]]]>
+                <![CDATA[[TestResult name=verifyInvalidCredentialsErrorMessage status=SUCCESS method=KiteLoginPagesValidation.verifyInvalidCredentialsErrorMessage()[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@5c86a017] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@38467116]" started-at="2022-04-09T07:16:09 IST" name="closeApplication" finished-at="2022-04-09T07:16:09 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.zerodha.kite.tests.KiteLoginPagesValidation@5c86a017]" started-at="2022-04-09T18:57:21 IST" name="closeApplication" finished-at="2022-04-09T18:57:21 IST" duration-ms="153" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>

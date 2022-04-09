@@ -1,0 +1,80 @@
+#The ways to write data driven framework
+- Excel sheet
+- properties file
+- DataProvider
+- parameter
+
+=================================================
+- @parameter keywords in testNG
+- @data provider in TestNG
+- framework folder structure
+- javaScriptExecutor==>sendkeys, click,scroll down web page
+=======================================================
+- @parameter keywords in testNG
+- @data provider in TestNG
+
+#DataProvider:
+-using data provider we can run same test case for different set of data
+- method ---> return object[][]
+- we can write dataprovider method in same class/different class
+- @DataProvider
+
+@DataProvider(name="LoginDataProvider")
+	public Object[][] getData(){
+		Object[][] data= {{"KW0610", "Shiv@123", "152022", "SB"}};
+		return data;
+	}
+
+-------------------------
+@Test(dataProvider ="LoginDataProvider", dataProviderClass = LoginTestData.class)
+public void verifyProfileName(String username, String password, String PIN, String profileName){
+
+
+
+}
+----------------------------
+#@PARAMETER
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="profileName" value="SB"></parameter>
+	<test thread-count="5" name="Test">
+		<parameter name="username" value="KW0610"></parameter>
+		<parameter name="password" value="Shiv@123"></parameter>
+		<parameter name="PIN" value="152022"></parameter>
+		<classes>
+			<class name="testNG.Parameter.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+=====================
+@BeforeMethod
+	@Parameters({"username", "password", "PIN"})
+	public void loginToApp(String username, String password, String PIN){
+
+
+
+}
+
+@Test
+	@Parameters({"profileName"})
+	public void verifyProfileName(String profileName){
+
+}
+=============================
+#Javascript Executor
+
+JavascriptExecutor js = (JavascriptExecutor) driver;
+
+1. for enter text into text box without sendkeys\
+
+js.executeScript("arguments[0].value='------';", Element);
+
+2. for click without click() method
+js.executeScript("arguments[0].click();", Element);
+
+3. to scroll down page
+js.executeScript("arguments[0].scrollIntoView();", Element);
+

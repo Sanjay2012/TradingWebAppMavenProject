@@ -1,0 +1,87 @@
+
+#Agenda
+========================
+- maven life cycle
+- Headless browser
+=================================
+- Headless browser:
+* which is fastest browser
+- HtmlUnitDriver/ phantumJs---> deprecated
+- chrome headless
+- firefox headless
+- headless--> visual interaction with UI not come into picture
+- Headless==> run script without rendering UI
+
+# syntax:
+System.setProperty("webdriver.chrome.driver", 
+                    System.getProperty("user.dir") + "//drivers/chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			driver = new ChromeDriver(options);
+
+=================================================================
+#Maven life cycle (Maven is our build tool)
+- set of task that are executed when maven build is run
+- build pahses
+- three life cycles of maven build
+1. Default life cycle==> project deployment
+2. Clean life cycle ==> handles project cleaning
+3. Site life cycle===> handles the creation of your projects site documentation
+----------------
+@Default life cycle
+1. valiadte:valiadte the project is correct and all neccesary info is available 
+            - check pom.xml conf
+2. compile:complile source code
+           - compile POM classes
+3. Test   : Test the compiled source code using suitable unit testing frameworks
+          - not required code is packed/ deployed
+          - execute our test classes
+4.Package: packing copiled source code and related dependencies into distributable format
+          zipped: packed source code
+          jar: standalone
+          war: web application 
+5. Verify: run the created package at local
+6. Install: install the package into local
+7. deploy: local repo---> remote repo
+          - sharing the build to teamates/ other projects
+java -jar <jarfilename>.jar
+============================================
+# maven commands:
+
+- mvn clean: clean target directory from project
+- mvn compile
+- mvn test
+- mvn package : create jar file into target directory
+ *mvn clean package:clear target dire--> 
+           create package with running the test classes during build
+ *mvn clean package-Dmaven.test.skip=true: doing as above but,
+            create package without running the test classes during build
+* mvn verify -Dmaven.test.skip=true  : valiadte package created correct/ not
+* mvn clean install -Dmaven.test.skip=true 
+  : once installed local repository will be created and its ready to push into remote
+
+=============================================
+Git-Github
+# How to push the local repo to remote repo
+
+- Create remote repo
+- intialize local repo: git init
+- add the files into staging : git add *
+- commit  : git commit -m "upload the project"
+- git branch -M main
+- git remote add origin https://github.com/Sanjay2012/TradingAppAutomation.git
+- git push -u origin main
+=======================
+# How to clone the remote repo
+https://github.com/Sanjay2012/TradingAppAutomation.git
+
+
+
+
+
+
+
+
+
+
+
